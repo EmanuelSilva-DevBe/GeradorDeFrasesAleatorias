@@ -1,4 +1,7 @@
 package gerenciador_pedido.Repository;
 
-public interface ProdutoRepository {
+import gerenciador_pedido.Model.Produto;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 }
